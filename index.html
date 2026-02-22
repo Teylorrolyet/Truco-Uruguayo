@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Truco Uruguayo Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🃏 Truco Uruguayo</h1>
+
+<div class="panel">
+Dificultad:
+<select id="dificultad">
+<option value="0">Fácil</option>
+<option value="1">Normal</option>
+<option value="2">Difícil</option>
+</select>
+</div>
+
+<div id="marcador">
+Jugador <span id="pj">0</span> —
+CPU <span id="pc">0</span>
+</div>
+
+<div id="estado"></div>
+
+<div id="cpu" class="zona"></div>
+<div id="mesa"></div>
+<div id="jugador" class="zona"></div>
+
+<div class="acciones">
+<button onclick="cantarTruco()">Truco</button>
+<button onclick="cantarEnvido()">Envido</button>
+<button onclick="nuevaMano()">Nueva Mano</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
